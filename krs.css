@@ -1,0 +1,487 @@
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #eeecff;
+  color: #190069;
+}
+
+
+/* judul */
+.judul-halaman {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* Posisikan konten ke kiri */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+.judul-halaman img {
+  height: 20px;
+  margin-left: 20px;
+  margin-right: -10px;
+  animation: slideRightText 0.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+}
+.judul-halaman h1 {
+  color: #190069;
+  padding: 20px;
+  font-size: 20px;
+  animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+}
+
+
+.ket-semster {
+  animation: blurIn 3s ease-in-out;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.semester{ 
+  background-color: #190069;
+  color: white;
+  border-radius: 25px 0 0 25px;
+  flex: 1.7; /* Mengatur .semester lebih panjang dari .jumlah-sks */
+}
+
+.semester h2,
+.jumlah-sks h2 {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.semester p,
+.jumlah-sks p {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.jumlah-sks {
+  background-color: rgba(255, 211, 134, 0.729);
+  color: #190069;
+  border-radius: 0 25px 25px 0;
+  flex: 1; /* Mengatur .jumlah-sks lebih pendek dari .semester */
+}
+
+.semester img, .jumlah-sks img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  height: 50px;
+}
+
+
+
+
+
+
+/* krs smt 2 */
+.SMT2 {
+  animation: blurIn 3s ease-in-out;
+
+  margin: 20px;
+  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  background-color: rgba(255, 232, 192, 0.729);
+
+  border-radius: 15px;
+}
+
+
+/* judul semester */
+.judul-smt {
+  
+  padding: 20px;
+}
+.judul-smt p {
+  font-size: 13px;
+}
+
+
+/* background abu-abu di belakang matkul */
+.bg-matkul {
+  animation: blurIn 2.5s ease-in-out;
+  background-color: #dbd9ea;
+  padding: 20px 0 0 0;
+}
+
+
+/* elemen putih pembungkus matkul */
+.matkul-smt-2 {
+  animation: blurIn 3.5s ease-in-out;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  
+}
+
+
+/* nama matkul */
+.matkul-smt-2 h2 {
+  font-size: 13px;
+}
+
+
+/* sks */
+.matkul-smt-2 .sks img {
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.matkul-smt-2 .sks p {
+  font-size: 10px;
+}
+
+
+/* kks */
+.kks {
+  display: flex;
+}
+.kks .content-kks {
+  margin-right: 65px;
+}
+.kks .content-kks p {
+  font-size: 9.5px;
+  color: #b4b4b4;
+}
+.kks .content-kks h2 {
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+
+
+/* hjl / jl / jam / lokasi */
+.hjl {
+  background-color: rgba(246, 229, 172, 0.729);
+
+  width: max-content;
+  border-radius: 10px;
+}
+
+.hjl h2 {
+  font-size: 13px;
+  padding: 25px 15px 5px 15px;
+  margin-bottom: -30px; /* Tambahkan margin-bottom untuk mengurangi jarak ke elemen .jl */
+}
+
+.jl {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-top: 5px; /* Tambahkan margin-top untuk mengurangi jarak ke elemen h2 */
+}
+
+.hjl .jl .jam {
+  margin-right: 20px;
+}
+
+.hjl .jl .jam img,
+.hjl .jl .lokasi img {
+  height: 10px;
+  margin-bottom: -1.5px;
+}
+
+.hjl .jl p {
+  font-size: 10px;
+}
+.hjl .jl .lokasi p {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+/* matkul yang jamnya ada 2 */
+/* hjl / jl / jam / lokasi */
+.dua-matkul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hjl2, .hjl1 {
+  width: 48%; /* Menyesuaikan lebar agar ada ruang di antara kedua elemen */
+}
+
+.hjl2 {
+  order: 1; /* Mengatur urutan .hjl2 menjadi pertama (di sebelah kiri) */
+  background-color: rgba(246, 229, 172, 0.729);
+  border-radius: 10px;
+}
+
+.hjl2 h2 {
+  font-size: 13px;
+  padding: 25px 15px 5px 15px;
+  margin-bottom: -30px; /* Tambahkan margin-bottom untuk mengurangi jarak ke elemen .jl */
+}
+
+.jl2 {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-top: 5px; /* Tambahkan margin-top untuk mengurangi jarak ke elemen h2 */
+}
+
+.hjl2 .jl2 .jam2 {
+  margin-right: 20px;
+}
+
+.hjl2 .jl2 .jam2 img,
+.hjl2 .jl2 .lokasi2 img {
+  height: 10px;
+  margin-bottom: -1.5px;
+}
+
+.hjl2 .jl2 p {
+  font-size: 10px;
+}
+.hjl2 .jl2 .lokasi2 p {
+  font-size: 10px;
+}
+
+.hjl1 {
+  background-color: rgba(246, 229, 172, 0.729);
+  order: 2; /* Mengatur urutan .hjl1 menjadi kedua (di sebelah kanan) */
+  border-radius: 10px;
+}
+
+.hjl1 h2 {
+  font-size: 13px;
+  padding: 25px 15px 5px 15px;
+  margin-bottom: -30px; /* Tambahkan margin-bottom untuk mengurangi jarak ke elemen .jl */
+}
+
+.jl1 {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-top: 5px; /* Tambahkan margin-top untuk mengurangi jarak ke elemen h2 */
+}
+
+.hjl1 .jl1 .jam1 {
+  margin-right: 20px;
+}
+
+.hjl1 .jl1 .jam1 img,
+.hjl1 .jl1 .lokasi1 img {
+  height: 10px;
+  margin-bottom: -1.5px;
+}
+
+.hjl1 .jl1 p {
+  font-size: 10px;
+}
+.hjl1 .jl1 .lokasi2 p {
+  font-size: 10px;
+}
+
+/* presentase kehadiran */
+.presentase-kehadiran {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #6f6f6f1e;
+  padding: 10px;
+  margin-top: 20px;
+  height: 100%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.presentase-kehadiran p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.presentase-kehadiran .persen {
+  background-color: rgba(114, 255, 152, 0.682);
+  border-radius: 10px;
+
+}
+
+.presentase-kehadiran .persen p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* tombol bacaselengkapnya dan tutup */
+.toggle-button-krs-smt-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: transparent; /* sesuaikan dengan warna latar belakang */
+  border: 1px solid #ccc; /* sesuaikan dengan warna border yang diinginkan */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Ganti dengan ikon baca selengkapnya dan tutup */
+.toggle-button-krs-smt-2 I {
+  transition: transform 10s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMT 1 */
+/* SMT1 */
+.SMT1 {
+  animation: blurIn 3s ease-in-out;
+  margin: 20px;
+  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  background-color: rgba(172, 162, 216, 0.729);
+  border-radius: 15px;
+}
+
+/* judul semester */
+.judul-smt-1 {
+  padding: 20px;
+}
+.judul-smt-1 p {
+  font-size: 13px;
+}
+
+/* background abu-abu di belakang matkul */
+.bg-matkul-1 {
+  animation: blurIn 2.5s ease-in-out;
+  background-color: #dbd9ea;
+  padding: 20px 0 0 0;
+}
+
+/* elemen putih pembungkus matkul */
+.matkul-smt-1 {
+  animation: blurIn 3.5s ease-in-out;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+}
+
+/* nama matkul */
+.matkul-smt-1 h2 {
+  font-size: 13px;
+}
+
+/* sks */
+.matkul-smt-1 .sks-1 img {
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.matkul-smt-1 .sks-1 p {
+  font-size: 10px;
+}
+
+/* kks */
+.kks-1 {
+  display: flex;
+}
+.kks-1 .content-kks-1 {
+  margin-right: 65px;
+}
+.kks-1 .content-kks-1 p {
+  font-size: 9.5px;
+  color: #b4b4b4;
+}
+.kks-1 .content-kks-1 h2 {
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+/* hjl / jl / jam / lokasi */
+.hjl-1 {
+  background-color: rgba(246, 229, 172, 0.729);
+  width: max-content;
+  border-radius: 10px;
+}
+
+.hjl-1 h2 {
+  font-size: 13px;
+  padding: 25px 15px 5px 15px;
+  margin-bottom: -30px; /* Tambahkan margin-bottom untuk mengurangi jarak ke elemen .jl */
+}
+
+.jl-1 {
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-top: 5px; /* Tambahkan margin-top untuk mengurangi jarak ke elemen h2 */
+}
+
+.hjl-1 .jl-1 .jam-1 {
+  margin-right: 20px;
+}
+
+.hjl-1 .jl-1 .jam-1 img,
+.hjl-1 .jl-1 .lokasi-1 img {
+  height: 10px;
+  margin-bottom: -1.5px;
+}
+
+.hjl-1 .jl-1 p {
+  font-size: 10px;
+}
+.hjl-1 .jl-1 .lokasi-1 p {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.toggle-button-krs-smt-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: transparent; /* sesuaikan dengan warna latar belakang */
+  border: 1px solid #ccc; /* sesuaikan dengan warna border yang diinginkan */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Ganti dengan ikon baca selengkapnya dan tutup */
+.toggle-button-krs-smt-1 I {
+  transition: transform 10s ease;
+}

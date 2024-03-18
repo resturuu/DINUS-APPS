@@ -1,0 +1,241 @@
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+   transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+   transform: translateX(0); /* Menuju posisi normal */
+  }
+  }
+  
+  
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #eeecff;
+  color: #190069;
+
+}
+
+.judul-menu h1 {
+  font-size: 15px;
+  color: #190069;
+  animation: blurIn 3s ease-in-out;
+  padding: 20px;
+  margin: 15px 0px -20px;
+}
+
+/* judul */
+.judul-halaman {
+background-color: white;
+margin: 0;
+padding: 0;
+height: 40px;
+display: flex;
+justify-content: flex-start; /* Posisikan konten ke kiri */
+align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+
+.judul-halaman h1 {
+color: #190069;
+padding: 20px;
+font-size: 20px;
+animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+}
+
+
+/* profile */
+.profile {
+  animation: blurIn 3s ease-in-out;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  background-color: #190069;
+  border-radius: 0 0 25px 25px;
+}
+
+.profile p {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+
+.users {
+  height: 95px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex; /* Mengaktifkan flexbox */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+
+.name h2,
+.name p {
+  margin: 0;
+}
+
+.profile .users .name h2 {
+  font-size: 15px;
+  color: #190069;
+}
+
+.profile .users .name p {
+  font-size: 14px;
+  color: #190069;
+}
+
+.profile .users img {
+  padding: 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* menu */
+.menu {
+  animation: blurIn 3s ease-in-out;
+  height: 250px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center; /* Mengatur ikon berjejer ke kanan */
+}
+
+.icon {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon-item {
+  text-align: center;
+  margin-left: 20px; /* Jarak antara setiap ikon */
+}
+
+.icon-item img {
+  display: block;
+  height: 40px;
+  padding: 15px;
+}
+
+.icon-item p {
+  color: #190069;
+  font-size: 11px;
+  margin: 0;
+  font-weight: 550;
+}
+
+.kehadiran {
+  margin-bottom: 5px;
+  background-color: #00ff74;
+  border-radius: 15px;
+  align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
+}
+
+.krs {
+  margin-bottom: 5px;
+  background-color: #ef56a5;
+  border-radius: 15px;
+  align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
+}
+
+.khs {
+  margin-bottom: 5px;
+  background-color: #ef7f56;
+  border-radius: 15px;
+  align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
+}
+
+.pembayaran {
+  margin-bottom: 5px;
+  background-color: #efc956;
+  border-radius: 15px;
+  align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
+}
+
+.pengaturan {
+  margin-bottom: 5px;
+  background-color: #b3b2b2;
+  border-radius: 15px;
+  align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
+}
+
+/* CSS for pengumuman */
+.pengumuman {
+  animation: blurIn 3s ease-in-out;
+  margin: 15px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center; /* Menyusun konten secara vertikal di tengah */
+  border-radius: 10px;
+  margin-bottom: 20%;
+}
+
+.pengumuman a {
+  font-size: 12.5px;
+  text-decoration: none;
+  margin-left: 20px; /* Jarak antara tautan dan batas kiri */
+}
+
+/* navbar */
+.navigasi {
+  position: fixed;
+  bottom: 0;
+  height: 6.5%;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2); /* Bayangan ke atas */
+}
+
+.nav {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 55px;
+}
+
+.navigasi .nav .navbar p {
+  margin: 0;
+  color: #190069;
+  font-size: 10px;
+}
+
+.navbar img {
+  margin-top: 10px;
+  max-width: 25px;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek yang lebih halus */
+}
+
+.navbar img:hover,
+.navbar img:active {
+  max-width: 27px;
+  transform: rotate(10deg); /* Rotasi 10 derajat saat dihover atau diklik */
+}

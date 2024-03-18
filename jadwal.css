@@ -1,0 +1,267 @@
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #eeecff;
+  color: #190069;
+
+}
+
+/* judul */
+.judul-halaman {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* Posisikan konten ke kiri */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+
+.judul-halaman h1 {
+  color: #190069;
+  padding: 20px;
+  font-size: 20px;
+  animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+}
+
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
+/* JADWAL */
+/* HARI */
+.senin {
+  animation: blurIn 3s ease-in-out;
+  padding: 20px;
+}
+
+.senin .hari {
+  max-width: max-content;
+  background-color: rgb(255, 225, 143);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0; /* Menghilangkan ruang ke bawah */
+}
+
+.senin .hari p {
+  padding: 5px 40px;
+  margin: 0; /* Menghilangkan margin */
+  font-size: 10px;
+  margin-left: -20px;
+}
+
+.senin .matkul h3 {
+  font-size: 14px;
+}
+
+/* MATKUL */
+.senin .matkul {
+  width: 100%;
+  background-color: white;
+  padding-top: 0; /* Menghilangkan padding atas */
+  border-radius: 0 10px 10px 10px;
+}
+
+.senin .matkul h3 {
+  padding: 20px 20px;
+  margin: 0; /* Menghilangkan margin */
+}
+
+/* NIM MATKUL DAN SKS */
+.sks {
+  margin-top: -20px;
+}
+
+/* icon yang berada di tengah tengah sks */
+.senin .matkul .sks img {
+  margin-top: 0;
+  height: 9px;
+  margin-left: 10px; /* Menghapus margin kiri */
+  margin-right: 10px;
+  vertical-align: middle; /* Menengahkan secara vertikal */
+}
+
+.senin .matkul .sks p {
+  margin-top: 0;
+  padding: 0;
+  font-size: 9px;
+  color: #c2c2c2;
+  padding: 5px 20px;
+  display: inline-block; /* Membuat tag <p> menjadi blok inline */
+}
+
+/* JAM DAN LOKASI */
+.info {
+  display: flex; /* Menjadikan elemen .info menggunakan flexbox */
+}
+
+.senin .matkul .jam-lokasi {
+  margin: 20px;
+  padding: 0 10px 0 10px;
+  margin-top: 15px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+
+.senin .matkul .jam-lokasi img {
+  width: 9px;
+  height: 9px;
+  margin-bottom: -1px;
+}
+
+.senin .matkul .jam-lokasi p {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+/* JADWAL */
+/* HARI */
+.senin {
+  padding: 20px;
+}
+
+.senin .hari {
+  max-width: max-content;
+  background-color: rgb(255, 225, 143);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0; /* Menghilangkan ruang ke bawah */
+}
+
+.senin .hari p {
+  padding: 5px 40px;
+  margin: 0; /* Menghilangkan margin */
+  font-size: 10px;
+  margin-left: -20px;
+}
+
+.senin .matkul-akhir h3 {
+  font-size: 14px;
+}
+
+/* MATKUL */
+
+.senin .matkul-akhir {
+  width: 100%;
+  background-color: white;
+  padding-top: 0; /* Menghilangkan padding atas */
+  border-radius: 0 10px 10px 10px;
+  margin-bottom: 70px;
+}
+
+.senin .matkul-akhir h3 {
+  padding: 20px 20px;
+  margin: 0; /* Menghilangkan margin */
+}
+
+/* NIM MATKUL DAN SKS */
+.sks {
+  margin-top: -20px;
+}
+
+/* icon yang berada di tengah tengah sks */
+.senin .matkul-akhir .sks img {
+  margin-top: 0;
+  height: 9px;
+  margin-left: 10px; /* Menghapus margin kiri */
+  margin-right: 10px;
+  vertical-align: middle; /* Menengahkan secara vertikal */
+}
+
+.senin .matkul-akhir .sks p {
+  margin-top: 0;
+  padding: 0;
+  font-size: 9px;
+  color: #c2c2c2;
+  padding: 5px 20px;
+  display: inline-block; /* Membuat tag <p> menjadi blok inline */
+}
+
+/* JAM DAN LOKASI */
+.info {
+  display: flex; /* Menjadikan elemen .info menggunakan flexbox */
+}
+
+.senin .matkul-akhir .jam-lokasi {
+  margin: 20px;
+  padding: 0 10px 0 10px;
+  margin-top: 15px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+
+.senin .matkul-akhir .jam-lokasi img {
+  width: 9px;
+  height: 9px;
+  margin-bottom: -1px;
+}
+
+.senin .matkul-akhir .jam-lokasi p {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+/* navbar */
+.navigasi {
+  position: fixed;
+  bottom: 0;
+  height: 6.5%;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2); /* Bayangan ke atas */
+}
+
+.nav {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 55px;
+}
+
+.navigasi .nav .navbar p {
+  margin: 0;
+  color: #190069;
+  font-size: 10px;
+}
+
+.navbar img {
+  margin-top: 10px;
+  max-width: 25px;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek yang lebih halus */
+}
+
+.navbar img:hover,
+.navbar img:active {
+  max-width: 27px;
+  transform: rotate(10deg); /* Rotasi 10 derajat saat dihover atau diklik */
+}

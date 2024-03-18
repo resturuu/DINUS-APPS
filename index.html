@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinus Verse Login Mahasiswa</title>
+    <style>
+@keyframes blurIn {
+     0% {
+         opacity: 0;
+         filter: blur(10px);
+     }
+     50% {
+         opacity: 1;
+         filter: blur(0);
+     }
+     100% {
+         opacity: 1;
+         filter: blur(0);
+     }
+ }
+      body {
+        animation: fadeIn 5s ease; /* Menggunakan animasi fadeIn dengan durasi 2 detik dan ease timing function */
+
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Mencegah scrolling saat form muncul */
+        background-color: #190069; /* Ubah latar belakang menjadi biru */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Menggunakan tinggi viewport untuk halaman utama */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .login-form {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-radius: 25px 25px 0 0;
+        height: 25%;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #ccc;
+        transition: transform 0.3s ease; /* Efek transisi saat form muncul */
+        transform: translateY(100%); /* Mulai dengan posisi tersembunyi */
+      }
+
+      .login-form input[type="text"] {
+        margin-top: 20px;
+      }
+      .login-form input[type="text"] {
+        
+        width: calc(100% - 40px); /* Lebar input dikurangi padding */
+        margin-left: 20px;
+        padding: 10px;
+
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: rgba(0, 0, 0, 0.1) solid;
+        border-radius: 25px 25px 0 0;
+
+        font-size: 14px; /* Ukuran font */
+        margin-bottom: 10px; /* Hilangkan margin default */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      
+
+      .login-form input[type="password"] {
+        width: calc(100% - 40px); /* Lebar input dikurangi padding */
+        margin-left: 20px;
+        padding: 10px;
+
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: rgba(0, 0, 0, 0.1) solid;
+
+        font-size: 14px; /* Ukuran font */
+        margin-bottom: 10px; /* Hilangkan margin default */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .login-form input[type="submit"] {
+        width: calc(100% - 40px); /* Lebar input dikurangi padding */
+        padding: 10px;
+        margin-left: 20px;
+
+        background-color: #fccc1e;
+        border-radius: 0 0 25px 25px;
+        
+        color: #190069;
+        border: none;
+        cursor: pointer;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .show-form {
+        transform: translateY(
+          0
+        ); /* Munculkan form saat kelas ini ditambahkan */
+      }
+
+      /* Styling tombol */
+      .show-form-button {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 30px;
+        background-color: #fccc1e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .show-form-button:hover {
+        background-color: #ed9600;
+      }
+
+      /* Styling logo */
+      .logo-container {
+     animation: blurIn 3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+
+      }
+
+      .logo {
+        height: 120px;
+      }
+
+      /* Partikel */
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: -1; /* Letakkan di belakang konten lain */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="logo-container">
+      <!-- Logo -->
+      <img src="image/Logo Udinus -.png" alt="Logo" class="logo" />
+      <!-- Text -->
+      <p>Universitas Dian Nuaswantoro</p>
+    </div>
+
+    <!-- Partikel -->
+    <div id="particles-js"></div>
+
+    <!-- Tombol untuk menampilkan form -->
+    <button class="show-form-button" onclick="toggleLoginForm()">
+      Login
+    </button>
+
+    <!-- Form login -->
+    <div class="login-form" id="loginForm">
+      <form
+        id="loginForm"
+        onsubmit="return validateLogin()"
+        action="dashboard.html"
+        method="GET"
+      >
+        <input type="text" id="nim" name="nim" placeholder="NIM" required />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+
+    <!-- Script Partikel -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 50 /* Jumlah partikel yang lebih sedikit */,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "https://cdn.freebiesupply.com/logos/large/2x/open-source-logo-png-transparent.png",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 5 /* Ukuran partikel yang lebih kecil */,
+            random: false,
+            anim: {
+              enable: true,
+              speed: 10,
+              size_min: 10,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 200,
+            color: "#ffffff",
+            opacity: 1,
+            width: 2,
+          },
+          move: {
+            enable: true,
+            speed: 10,
+            direction: "bottom",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+
+      var loginForm = document.getElementById("loginForm");
+      var showFormButton = document.querySelector(".show-form-button");
+
+      function toggleLoginForm() {
+        loginForm.classList.toggle("show-form");
+        showFormButton.classList.toggle("hide-button");
+        if (loginForm.classList.contains("show-form")) {
+          document.body.addEventListener("click", hideFormOnClickOutside);
+        } else {
+          document.body.removeEventListener("click", hideFormOnClickOutside);
+        }
+      }
+
+      function hideFormOnClickOutside(event) {
+        if (
+          !loginForm.contains(event.target) &&
+          !showFormButton.contains(event.target)
+        ) {
+          loginForm.classList.remove("show-form");
+          showFormButton.classList.remove("hide-button");
+          document.body.removeEventListener("click", hideFormOnClickOutside);
+        }
+      }
+
+      // Fungsi untuk memvalidasi login
+      function validateLogin() {
+        var nim = document.getElementById("nim").value;
+        var password = document.getElementById("password").value;
+
+        // Lakukan pengecekan NIM dan password
+        if (nim === "A11.2023.15194" && password === "RESTU.DINUS") {
+          window.location.href = "dashboard.html"; // Redirect ke halaman dashboard.html jika login berhasil
+          return false; // Mencegah form submit
+        } else {
+          alert("NIM atau password salah!"); // Tampilkan pesan kesalahan
+          return false; // Mencegah form submit
+        }
+      }
+    </script>
+  </body>
+</html>

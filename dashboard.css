@@ -86,6 +86,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   background-color: white;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .name h2,
@@ -111,8 +112,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 
 .right-icon {
   position: absolute; /* Mengatur posisi absolut */
-  right: 0; /* Memposisikan elemen ke kanan */
-  margin-right: -12.5px;
+  right: -32.5px; /* Memposisikan elemen ke kanan */
 }
 
 .profile .users .right-icon img {

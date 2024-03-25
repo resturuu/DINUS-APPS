@@ -112,7 +112,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 
 .right-icon {
   position: absolute; /* Mengatur posisi absolut */
-  right: -32.5px; /* Memposisikan elemen ke kanan */
+  right: 0;
 }
 
 .profile .users .right-icon img {

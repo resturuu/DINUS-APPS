@@ -117,6 +117,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   border-radius: 25px;
   display: flex;
   justify-content: center; /* Mengatur ikon berjejer ke kanan */
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -136,6 +137,8 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   display: block;
   height: 40px;
   padding: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 .icon-item p {
@@ -190,6 +193,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   align-items: center; /* Menyusun konten secara vertikal di tengah */
   border-radius: 10px;
   margin-bottom: 20%;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pengumuman a {
@@ -209,7 +213,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: center;
-  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2); /* Bayangan ke atas */
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
 }
 
 .nav {

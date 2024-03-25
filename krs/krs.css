@@ -62,6 +62,8 @@ body {
   display: flex;
   padding: 20px;
   margin-bottom: 20px;
+  
+  
 }
 
 .semester{ 
@@ -110,7 +112,8 @@ body {
   animation: blurIn 3s ease-in-out;
 
   margin: 20px;
-  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
   background-color: rgba(255, 232, 192, 0.729);
 
   border-radius: 15px;
@@ -374,6 +377,8 @@ body {
   box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
   background-color: rgba(172, 162, 216, 0.729);
   border-radius: 15px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
+
 }
 
 /* judul semester */
@@ -399,7 +404,8 @@ body {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 /* nama matkul */

@@ -117,6 +117,8 @@ to {
   margin: 15px;
   padding: 15px;
   background-color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .status a {
@@ -137,6 +139,8 @@ to {
   padding: 15px;
   margin: 15px;
   position: relative;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .toggle-btn {
@@ -181,6 +185,8 @@ to {
   padding: 15px;
   margin: 15px;
   position: relative;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .toggle-btn-ortu {
@@ -218,6 +224,7 @@ to {
 
 /* LOG OUT */
 .logOut {
+  
   animation: blurIn 3s ease-in-out;
   text-align: center;
   border-radius: 20px;
@@ -225,14 +232,16 @@ to {
   padding: 15px;
   background-color: rgba(255, 78, 78, 0.589);
   margin-bottom: 100px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logOut button {
-  font-size: 17px;
+  font-size: 13px;
   background-color: transparent;
   border: none;
   font-weight: 545;
   color: rgba(161, 53, 53, 0.808);
+  
 }
 
 /* navbar */

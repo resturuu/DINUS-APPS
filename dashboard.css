@@ -71,7 +71,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   padding: 20px;
   background-color: #190069;
   border-radius: 0 0 25px 25px;
-  
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
 }
 
 .profile p {

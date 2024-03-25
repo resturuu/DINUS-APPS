@@ -120,7 +120,7 @@ body {
 /* judul semester */
 .judul-smt {
   
-  padding: 20px;
+  padding: 15px;
 }
 .judul-smt p {
   font-size: 13px;
@@ -129,6 +129,7 @@ body {
 
 /* background abu-abu di belakang matkul */
 .bg-matkul {
+  border-radius: 0 0 10px 10px;
   animation: blurIn 2.5s ease-in-out;
   background-color: #dbd9ea;
   padding: 20px 0 0 0;
@@ -306,7 +307,7 @@ body {
 }
 
 /* presentase kehadiran */
-.presentase-kehadiran {
+.presentase-kehadiran-1 {
   background-color: white;
   display: flex;
   border-radius: 10px;
@@ -319,18 +320,18 @@ body {
   justify-content: space-between;
 }
 
-.presentase-kehadiran p {
+.presentase-kehadiran-1 p {
   font-size: 10px;
   font-weight: bold;
 }
 
-.presentase-kehadiran .persen {
+.presentase-kehadiran-1 .persen-1 {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
 
 }
 
-.presentase-kehadiran .persen p {
+.presentase-kehadiran-1 .persen-1 p {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -341,7 +342,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-right: 20px;
   background-color: transparent; /* sesuaikan dengan warna latar belakang */
   border: 1px solid #ccc; /* sesuaikan dengan warna border yang diinginkan */
@@ -377,7 +378,7 @@ body {
 
 /* judul semester */
 .judul-smt-1 {
-  padding: 20px;
+  padding: 15px;
 }
 .judul-smt-1 p {
   font-size: 13px;
@@ -388,11 +389,12 @@ body {
   animation: blurIn 2.5s ease-in-out;
   background-color: #dbd9ea;
   padding: 20px 0 0 0;
+  border-radius: 0 0 10px 10px;
 }
 
 /* elemen putih pembungkus matkul */
 .matkul-smt-1 {
-  animation: blurIn 3.5s ease-in-out;
+  animation: blurIn 3s ease-in-out;
   margin-bottom: 20px;
   padding: 20px;
   background-color: white;
@@ -469,11 +471,41 @@ body {
   margin-right: 10px;
 }
 
+/* presentase kehadiran */
+.presentase-kehadiran {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #6f6f6f1e;
+  padding: 10px;
+  margin-top: 20px;
+  height: 100%;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.presentase-kehadiran p {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.presentase-kehadiran .persen {
+  background-color: rgba(114, 255, 152, 0.682);
+  border-radius: 10px;
+
+}
+
+.presentase-kehadiran .persen p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .toggle-button-krs-smt-1 {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-right: 20px;
   background-color: transparent; /* sesuaikan dengan warna latar belakang */
   border: 1px solid #ccc; /* sesuaikan dengan warna border yang diinginkan */
@@ -485,3 +517,4 @@ body {
 .toggle-button-krs-smt-1 I {
   transition: transform 10s ease;
 }
+

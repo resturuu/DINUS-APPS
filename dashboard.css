@@ -195,6 +195,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 .pengumuman a {
   font-size: 12.5px;
   text-decoration: none;
+  color: black;
   margin-left: 20px; /* Jarak antara tautan dan batas kiri */
 }
 

@@ -71,6 +71,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   padding: 20px;
   background-color: #190069;
   border-radius: 0 0 25px 25px;
+  
 }
 
 .profile p {
@@ -83,8 +84,9 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   height: 95px;
   border-radius: 25px;
   background-color: white;
-  display: flex; /* Mengaktifkan flexbox */
-  align-items: center; /* Posisikan konten secara vertikal di tengah */
+  display: flex;
+  align-items: center;
+  
 }
 
 .name h2,
@@ -106,6 +108,16 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   padding: 20px;
   width: 80px;
   border-radius: 50%;
+}
+
+.right-icon {
+  position: absolute; /* Mengatur posisi absolut */
+  right: 0; /* Memposisikan elemen ke kanan */
+  margin-right: -12.5px;
+}
+
+.profile .users .right-icon img {
+  width: 30px;
 }
 
 /* menu */
@@ -172,7 +184,7 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 .pembayaran {
   margin-bottom: 5px;
   background-color: #efc956;
-  border-radius: 15px;
+  border-radius: 13px;
   align-self: center; /* Menyusun elemen kehadiran ke tengah secara vertikal */
 }
 

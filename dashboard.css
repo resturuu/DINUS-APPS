@@ -86,7 +86,6 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   background-color: white;
   display: flex;
   align-items: center;
-  
 }
 
 .name h2,

@@ -55,6 +55,7 @@ body {
   background-color: white;
   border-radius: 15px;
   padding: 20px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
 }
 
 .content .judul-pengumuman h2 {

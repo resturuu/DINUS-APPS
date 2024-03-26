@@ -33,6 +33,41 @@ body {
   animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
+/* resset pw */
+.reset {
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.reset a {
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.help {
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
+  display: grid;
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.help a {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffbf00;
+}
+
 /* Animasi slideRightText hanya untuk teks */
 @keyframes slideRightText {
   from {

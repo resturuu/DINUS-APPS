@@ -162,6 +162,7 @@ body {
 
 .judul p {
   margin: 0;
+  font-weight: bold;
 }
 
 .tebal-kuning {
@@ -177,14 +178,16 @@ body {
   align-items: center;
 }
 
-.date p {
+.keterangan .date p {
+  font-weight: bold;
+  font-size: 13.5px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.pertemuan p {
+.keterangan .pertemuan p {
   margin-top: 0;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .info img {

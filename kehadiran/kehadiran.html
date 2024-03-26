@@ -9,11 +9,12 @@
   <body>
     <!-- judul -->
     <div class="judul-halaman">
-      <a href="../dashboard.html">
-        <img src="icon-title/back.png" alt="" />
-      </a>
-      <h1>Kehadiran</h1>
-    </div>
+     <a href="#" id="link-kehadiran">
+         <img src="../icon-title/back.png" alt="" />
+     </a>
+     <h1>Kehadiran</h1>
+ </div>
+ 
 
     <!-- matriks -->
     <div class="content">
@@ -238,6 +239,24 @@
        </div>
      </div>
      </div>
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#link-kehadiran").click(function(event) {
+            event.preventDefault(); // Mencegah tautan untuk mengarahkan ke URL langsung
+
+            // Lakukan permintaan POST
+            $.post("/matriks/matriks.html", function(data, status) {
+                // Manipulasi atau tanggapan lain dari server
+                console.log("Response: " + data);
+            });
+        });
+    });
+</script>
+
+
 
   </body>
 </html>

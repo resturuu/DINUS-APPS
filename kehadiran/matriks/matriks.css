@@ -1,4 +1,32 @@
+
+   /* Animasi slideRightText hanya untuk teks */
+   @keyframes slideRightText {
+    from {
+     transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+    }
+    to {
+     transform: translateX(0); /* Menuju posisi normal */
+    }
+    }
+    
+    /* blur content */
+    @keyframes blurIn {
+      0% {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      50% {
+        opacity: 1;
+        filter: blur(0);
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
 body {
+  
      margin: 0;
      padding: 0;
      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -7,9 +35,7 @@ body {
      color: #190069;
    
    }
-   
-   
-   /* judul */
+
    /* judul */
    .judul-halaman {
    background-color: white;
@@ -36,33 +62,132 @@ body {
    animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
    }
 
-   
-   /* Animasi slideRightText hanya untuk teks */
-   @keyframes slideRightText {
-   from {
-    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
-   }
-   to {
-    transform: translateX(0); /* Menuju posisi normal */
-   }
-   }
-   
-   
-   /* blur content */
-   @keyframes blurIn {
-     0% {
-       opacity: 0;
-       filter: blur(10px);
-     }
-     50% {
-       opacity: 1;
-       filter: blur(0);
-     }
-     100% {
-       opacity: 1;
-       filter: blur(0);
-     }
-   }
-   
-   
-   
+  
+/* Nama matkul */
+.matkul {
+  margin: 15px;
+  animation: blurIn 3s ease-in-out;
+}
+.matkul h4 {
+  margin-bottom: 5px;
+}
+.matkul p{
+  margin-top: 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+
+/* absesnsi */
+.ket {
+  margin: 15px;
+  margin-top: 10px;
+  display: flex;
+  animation: blurIn 3s ease-in-out;
+}
+
+.hadir {
+  margin-right: 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #6f6f6f1e;
+  padding: 8px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hadir p {
+  margin-right: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.hadir .persen {
+  background-color: rgba(114, 255, 152, 0.682);
+  border-radius: 10px;
+
+}
+
+.hadir .persen p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* presentase kehadiran */
+.presentase{
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #6f6f6f1e;
+  padding: 8px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.presentase p {
+  font-size: 10px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.presentase .persen {
+  background-color: rgba(114, 255, 152, 0.682);
+  border-radius: 10px;
+
+}
+
+.presentase .persen p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* detail kehadiran */
+.cart {
+  animation: blurIn 3s ease-in-out;
+  margin: 15px;
+  margin-top: 25px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
+}
+
+.judul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.judul p {
+  margin: 0;
+}
+
+.tebal-kuning {
+  border: 2px solid #fcd34d; /* Mengatur ketebalan dan warna garis */
+}
+
+
+/* keterangan */
+.keterangan {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pertemuan p {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.info img {
+  margin-right: 20px;
+  height: 30px;
+}

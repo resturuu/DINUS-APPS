@@ -89,7 +89,7 @@ body {
 }
 
 .jumlah-sks {
-  background-color: rgba(255, 211, 134, 0.729);
+  background-color: #fde68a;
   color: #190069;
   border-radius: 0 25px 25px 0;
   flex: 1; /* Mengatur .jumlah-sks lebih pendek dari .semester */
@@ -114,7 +114,7 @@ body {
   margin: 20px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 
-  background-color: rgba(255, 232, 192, 0.729);
+  background-color: #fde68a;
 
   border-radius: 15px;
 }
@@ -188,7 +188,7 @@ body {
 
 /* hjl / jl / jam / lokasi */
 .hjl {
-  background-color: rgba(246, 229, 172, 0.729);
+  background-color: #fde68a;
 
   width: max-content;
   border-radius: 10px;
@@ -239,7 +239,7 @@ body {
 
 .hjl2 {
   order: 1; /* Mengatur urutan .hjl2 menjadi pertama (di sebelah kiri) */
-  background-color: rgba(246, 229, 172, 0.729);
+  background-color: #fde68a;
   border-radius: 10px;
 }
 
@@ -274,7 +274,7 @@ body {
 }
 
 .hjl1 {
-  background-color: rgba(246, 229, 172, 0.729);
+  background-color: #fde68a;
   order: 2; /* Mengatur urutan .hjl1 menjadi kedua (di sebelah kanan) */
   border-radius: 10px;
 }
@@ -441,7 +441,7 @@ body {
 
 /* hjl / jl / jam / lokasi */
 .hjl-1 {
-  background-color: rgba(246, 229, 172, 0.729);
+  background-color:#fde68a;
   width: max-content;
   border-radius: 10px;
 }

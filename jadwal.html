@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- judul -->
-    <div class="judul-halaman">
+    <div class="judul-halaman" id="home">
       <h1>Jadwal</h1>
     </div>
 
@@ -257,6 +257,11 @@
         </div>
       </div>
     </div>
+
+          <!-- to top -->
+          <a href="#home" id="scrollToTop" class="scroll-to-top">&uarr;</a>
+
+
     <!-- navigasi -->
     <div class="navigasi">
       <div class="nav">
@@ -283,4 +288,17 @@
       </div>
     </div>
   </body>
+  <script>
+      //  scrol smooth
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTop").style.display = "block";
+  } else {
+    document.getElementById("scrollToTop").style.display = "none";
+  }
+}
+
+  </script>
 </html>

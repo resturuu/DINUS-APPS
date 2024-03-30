@@ -70,11 +70,12 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
 }
 
 .nav a{
   margin: 0;
-  padding: 20px 40px 20px 40px;
+  padding: 10px 55px 10px 55px;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
@@ -245,6 +246,32 @@ hr {
 
 #contact {
   font-weight: bold;
+}
+
+/* to top */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 

@@ -1,3 +1,29 @@
+/* animasi blur untuk content */
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,12 +58,120 @@ body {
   animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
-/* Animasi slideRightText hanya untuk teks */
-@keyframes slideRightText {
-  from {
-    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
-  }
-  to {
-    transform: translateX(0); /* Menuju posisi normal */
-  }
+/* CONTENT */
+
+/* nav */
+.nav {
+  height: 100%;
+  width: auto;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav a{
+  margin: 0;
+  padding: 20px 70px 20px 70px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: #96a7becf;
+}
+/* Warna tautan aktif */
+.nav-link.active {
+  color: #190069;
+}
+
+/* info tagihan */
+.info {
+  margin: 15px;
+  font-size: 10px;
+  animation: blurIn 3s ease-in-out;
+}
+
+/* mahasiswa */
+.mhs {
+  margin: 15px;
+  text-align: center;
+  background-color: #efc956;
+  height: 100%;
+  width: auto;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+
+.mhs h3,
+p {
+  margin: 0;
+}
+
+/* tagihan */
+.info-tagihan {
+  margin: 15px;
+  height: 100%;
+  width: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sekarang p {
+  margin-left: 10px; /* Atur jarak antara item, kecuali yang terakhir */
+}
+
+.info-tagihan p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.sekarang {
+  margin-right: 80px;
+}
+
+#title {
+  font-size: 15px;
+}
+#y {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+hr {
+  height: 2px;
+  background-color: #190069;
+  border: none;
+}
+
+/* non reguler */
+.lunas {
+  background-color: white;
+  margin: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* Mengatur arah tata letak ke vertikal (menjadi satu di atas yang lain) */
+  justify-content: center; /* Menengahkan secara vertikal */
+  align-items: center; /* Menengahkan secara horizontal */
+  height: 50vh; /* Menggunakan tinggi viewport agar elemen berada di tengah layar */
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+.lunas h2 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.lunas p {
+  font-size: 15px;
 }

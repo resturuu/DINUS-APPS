@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="pembayaran.css" />
+    <script src="pembayaran.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -20,6 +21,83 @@
         <img src="icon-title/back.png" alt="" />
       </a>
       <h1>Pembayaran</h1>
+    </div>
+
+    <!-- content -->
+    <div class="nav">
+      <a href="#reguler" class="nav-link" id="nav-reguler">Reguler</a>
+      <a href="#non-reguler" class="nav-link" id="nav-non-reguler">Non-Reguler</a>
+    </div>
+
+    <div class="reguler" id="reguler">
+      <!-- info pembayarran -->
+      <div class="info">
+        <p>Informasi tagihan Pembayaran Mahasiswa</p>
+      </div>
+      <!-- mahasiswa -->
+      <div class="mhs">
+        <h3>A11.2023.15194</h3>
+        <p>RESTU ARDIANSYAH</p>
+      </div>
+      <!-- tagihan -->
+      <div class="info-tagihan">
+        <div class="total">
+          <p id="title">Tagihan</p>
+          <p id="title">Sekarang</p>
+          <p id="y">Lalu</p>
+        </div>
+        <hr />
+        <div class="total">
+          <div class="nama-tagihan">
+            <p>Gedung</p>
+            <p>SPP</p>
+            <p>Poliklinik</p>
+            <p>SKS</p>
+            <p>Modul</p>
+            <p>BK</p>
+            <p>Total Tagihan</p>
+            <p>Terbayar</p>
+            <p>Sisa Belum Bayar</p>
+          </div>
+          <div class="sekarang">
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+          </div>
+          <div class="lalu">
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+            <p>Rp 0,0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- non reguler -->
+    <div class="reguler" id="non-reguler" style="display: none;">
+      <!-- info pembayarran -->
+      <div class="info">
+        <p>Informasi tagihan Pembayaran Mahasiswa</p>
+      </div>
+      <!-- mahasiswa -->
+      <div class="mhs">
+        <h3>A11.2023.15194</h3>
+        <p>RESTU ARDIANSYAH</p>
+      </div>
+      <!-- tagihan -->
+      <div class="lunas">
+        <h2>Tagihan Sudah Lunas</h2>
+        <p>Belum Ada Tagihan Lagi Saat Ini</p>
+      </div>
     </div>
   </body>
 </html>

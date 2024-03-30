@@ -40,3 +40,27 @@ document.addEventListener("DOMContentLoaded", function() {
      }
    });
    
+
+   document.addEventListener("DOMContentLoaded", function() {
+     const regulerSection = document.getElementById("reguler");
+     const nonRegulerSection = document.getElementById("non-reguler");
+   
+     // Menambahkan event listener untuk peristiwa guliran
+     document.addEventListener("scroll", function() {
+       // Mendapatkan posisi vertikal dari bagian reguler dan non-reguler
+       const regulerPosition = regulerSection.getBoundingClientRect().top;
+       const nonRegulerPosition = nonRegulerSection.getBoundingClientRect().top;
+   
+       // Mengatur perilaku berdasarkan posisi guliran
+       if (Math.abs(regulerPosition) < window.innerHeight / 2) {
+         // Jika bagian reguler berada di tengah-tengah layar atau lebih dekat
+         document.getElementById("nav-reguler").classList.add("active");
+         document.getElementById("nav-non-reguler").classList.remove("active");
+       } else if (Math.abs(nonRegulerPosition) < window.innerHeight / 2) {
+         // Jika bagian non-reguler berada di tengah-tengah layar atau lebih dekat
+         document.getElementById("nav-non-reguler").classList.add("active");
+         document.getElementById("nav-reguler").classList.remove("active");
+       }
+     });
+   });
+   

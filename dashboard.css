@@ -122,7 +122,8 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 /* menu */
 .menu {
   animation: blurIn 3s ease-in-out;
-  height: 250px;
+  height: 100%;
+  width: auto;
   background-color: white;
   margin: 15px;
   border-radius: 25px;

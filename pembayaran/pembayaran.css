@@ -74,11 +74,11 @@ body {
 
 .nav a{
   margin: 0;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 40px 20px 40px;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  color: #96a7becf;
+  color: #bac3d0;
 }
 /* Warna tautan aktif */
 .nav-link.active {

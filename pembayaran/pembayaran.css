@@ -154,6 +154,100 @@ hr {
   border: none;
 }
 
+
+/* status */
+.status {
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+
+.status p {
+  font-size: 12px;
+}
+
+.ket {
+  background-color: #fecaca;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+/* metode pembayaran */
+.judul-metode {
+  padding-top: 20px;
+  margin: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  animation: blurIn 3s ease-in-out;
+}
+
+/* card */
+.card {
+  padding-top: 20px;
+  margin: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  animation: blurIn 3s ease-in-out;
+}
+
+.id {
+  background-color: #190069;
+  height: 100px;
+  width: auto;
+  color: white;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;  
+  display: flex;
+  justify-content: space-between;
+}
+
+.id h3 {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.id p {
+  font-size: 13px;
+}
+
+.name {
+  background-color: white;
+  height: 100%;
+  width: auto;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 0 0 15px 15px;
+
+  font-size: 13px;
+}
+
+/* panduan */
+.panduan {
+  margin: 15px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+
+.panduan p {
+  font-size: 13px;
+}
+
+#contact {
+  font-weight: bold;
+}
+
+
 /* non reguler */
 .lunas {
   background-color: white;

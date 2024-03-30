@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
    });
    
 
+// gulir
    document.addEventListener("DOMContentLoaded", function() {
      const regulerSection = document.getElementById("reguler");
      const nonRegulerSection = document.getElementById("non-reguler");

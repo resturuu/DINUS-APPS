@@ -1,59 +1,54 @@
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
 
-   /* Animasi slideRightText hanya untuk teks */
-   @keyframes slideRightText {
-    from {
-     transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
-    }
-    to {
-     transform: translateX(0); /* Menuju posisi normal */
-    }
-    }
-    
-    /* blur content */
-    @keyframes blurIn {
-      0% {
-        opacity: 0;
-        filter: blur(10px);
-      }
-      50% {
-        opacity: 1;
-        filter: blur(0);
-      }
-      100% {
-        opacity: 1;
-        filter: blur(0);
-      }
-    }
+/* blur content */
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 body {
-  
-     margin: 0;
-     padding: 0;
-     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-       "Lucida Sans", Arial, sans-serif;
-     background-color: #eff6ff;
-     color: #190069;
-   
-   }
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eff6ff;
+  color: #190069;
+}
 
-   /* judul */
-   .judul-halaman {
-   background-color: white;
-   margin: 0;
-   padding: 0;
-   height: 40px;
-   display: flex;
-   justify-content: flex-start; /* Posisikan konten ke kiri */
-   align-items: center; /* Posisikan konten secara vertikal di tengah */
-   }
-   .judul-halaman h1 {
-   color: #190069;
-   padding: 20px;
-   font-size: 20px;
-   animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
-   }
+/* judul */
+.judul-halaman {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* Posisikan konten ke kiri */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
+}
+.judul-halaman h1 {
+  color: #190069;
+  padding: 20px;
+  font-size: 20px;
+  animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+}
 
-  
 /* Nama matkul */
 .matkul {
   margin: 20px;
@@ -62,12 +57,11 @@ body {
 .matkul h4 {
   margin-bottom: 5px;
 }
-.matkul p{
+.matkul p {
   margin-top: 0;
   font-size: 13px;
   color: #94a3b8;
 }
-
 
 /* absesnsi */
 .ket {
@@ -98,7 +92,6 @@ body {
 .hadir .persen {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .hadir .persen p {
@@ -106,7 +99,7 @@ body {
   margin-right: 10px;
 }
 /* presentase kehadiran */
-.presentase{
+.presentase {
   background-color: white;
   display: flex;
   border-radius: 10px;
@@ -126,14 +119,12 @@ body {
 .presentase .persen {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .presentase .persen p {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 /* detail kehadiran */
 .cart {
@@ -159,7 +150,6 @@ body {
 .tebal-kuning {
   border: 2px solid #fcd34d; /* Mengatur ketebalan dan warna garis */
 }
-
 
 /* keterangan */
 .keterangan {

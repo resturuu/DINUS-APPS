@@ -26,12 +26,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #eff6ff;
   color: #190069;
 }
-
 
 /* judul */
 .judul-halaman {
@@ -56,17 +54,14 @@ body {
   animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
-
 .ket-semster {
   animation: blurIn 3s ease-in-out;
   display: flex;
   padding: 20px;
   margin-bottom: 20px;
-  
-  
 }
 
-.semester{ 
+.semester {
   background-color: #190069;
   color: white;
   border-radius: 25px 0 0 25px;
@@ -95,17 +90,13 @@ body {
   flex: 1; /* Mengatur .jumlah-sks lebih pendek dari .semester */
 }
 
-.semester img, .jumlah-sks img {
+.semester img,
+.jumlah-sks img {
   margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 15px;
   height: 50px;
 }
-
-
-
-
-
 
 /* krs smt 2 */
 .SMT2 {
@@ -119,16 +110,13 @@ body {
   border-radius: 15px;
 }
 
-
 /* judul semester */
 .judul-smt {
-  
   padding: 15px;
 }
 .judul-smt p {
   font-size: 13px;
 }
-
 
 /* background abu-abu di belakang matkul */
 .bg-matkul {
@@ -138,7 +126,6 @@ body {
   padding: 20px 0 0 0;
 }
 
-
 /* elemen putih pembungkus matkul */
 .matkul-smt-2 {
   animation: blurIn 3.5s ease-in-out;
@@ -147,15 +134,12 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
-  
 }
-
 
 /* nama matkul */
 .matkul-smt-2 h2 {
   font-size: 13px;
 }
-
 
 /* sks */
 .matkul-smt-2 .sks img {
@@ -166,7 +150,6 @@ body {
 .matkul-smt-2 .sks p {
   font-size: 10px;
 }
-
 
 /* kks */
 .kks {
@@ -183,8 +166,6 @@ body {
   font-size: 13px;
   margin-top: -5px;
 }
-
-
 
 /* hjl / jl / jam / lokasi */
 .hjl {
@@ -233,7 +214,8 @@ body {
   justify-content: space-between;
 }
 
-.hjl2, .hjl1 {
+.hjl2,
+.hjl1 {
   width: 48%; /* Menyesuaikan lebar agar ada ruang di antara kedua elemen */
 }
 
@@ -331,14 +313,12 @@ body {
 .presentase-kehadiran-1 .persen-1 {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .presentase-kehadiran-1 .persen-1 p {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 
 /* tombol bacaselengkapnya dan tutup */
 .toggle-button-krs-smt-2 {
@@ -358,17 +338,6 @@ body {
   transition: transform 10s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* SMT 1 */
 /* SMT1 */
 .SMT1 {
@@ -378,7 +347,6 @@ body {
   background-color: rgba(172, 162, 216, 0.729);
   border-radius: 15px;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
-
 }
 
 /* judul semester */
@@ -405,7 +373,6 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 /* nama matkul */
@@ -441,7 +408,7 @@ body {
 
 /* hjl / jl / jam / lokasi */
 .hjl-1 {
-  background-color:#fde68a;
+  background-color: #fde68a;
   width: max-content;
   border-radius: 10px;
 }
@@ -499,7 +466,6 @@ body {
 .presentase-kehadiran .persen {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .presentase-kehadiran .persen p {
@@ -523,4 +489,3 @@ body {
 .toggle-button-krs-smt-1 I {
   transition: transform 10s ease;
 }
-

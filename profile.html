@@ -1,199 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="profile.css" />
     <title>Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- judul halaman-->
     <div class="judul-halaman">
-        <h1>Profile</h1>
+      <h1>Profile</h1>
     </div>
 
     <!-- users -->
     <div class="users">
-        <img src="image/aku.jpg" alt="">
+      <img src="image/aku.jpg" alt="" />
     </div>
 
     <!-- Popup -->
     <div id="popup" class="popup">
-        <span class="close-btn" id="close-btn">&times;</span>
-        <img src="image/aku.jpg" alt="">
+      <span class="close-btn" id="close-btn">&times;</span>
+      <img src="image/aku.jpg" alt="" />
     </div>
 
     <!-- status  -->
     <div class="status">
-        <a>
-            Nomor Induk Mahasiswa
-            <p>A11.2023.15194</p>
-        </a>
+      <a>
+        Nomor Induk Mahasiswa
+        <p>A11.2023.15194</p>
+      </a>
 
-        <a>
-            Nama Maahsiswa
-            <p>RESTU ARDIANSYAH</p>
-        </a>
+      <a>
+        Nama Maahsiswa
+        <p>RESTU ARDIANSYAH</p>
+      </a>
 
-        <a>
-            Jalur Pendaftaran
-            <p>-</p>
-        </a>
+      <a>
+        Jalur Pendaftaran
+        <p>-</p>
+      </a>
 
-        <a>
-            Status
-            <p>Aktif</p>
-        </a>
+      <a>
+        Status
+        <p>Aktif</p>
+      </a>
 
-        <a>
-            Kelas (Pagi/Malam)
-            <p>Pagi</p>
-        </a>
+      <a>
+        Kelas (Pagi/Malam)
+        <p>Pagi</p>
+      </a>
 
-        <a>
-            Dosen Wali
-            <p>RAMA ARIA MEGANTARA M.kom</p>
-        </a>
+      <a>
+        Dosen Wali
+        <p>RAMA ARIA MEGANTARA M.kom</p>
+      </a>
     </div>
 
     <div class="data-diri">
-        <p>Data diri</p>
-        <button class="toggle-btn" onclick="toggleInfo()"><i class="fas fa-chevron-down"></i></button>
-        <div class="additional-info" style="display: none;">
-            <a>
-                Tempat Dan Tanggal Lahir
-                <p>-</p>
-            </a>
+      <p>Data diri</p>
+      <button class="toggle-btn" onclick="toggleInfo()">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="additional-info" style="display: none">
+        <a>
+          Tempat Dan Tanggal Lahir
+          <p>-</p>
+        </a>
 
-            <a>
-                Warga Negara
-                <p>WNI</p>
-            </a>
+        <a>
+          Warga Negara
+          <p>WNI</p>
+        </a>
 
-            <a>
-                Status Marital
-                <p>Belum Menikah</p>
-            </a>
+        <a>
+          Status Marital
+          <p>Belum Menikah</p>
+        </a>
 
-            <a>
-                Alamat Asal
-                <p>RAMA ARIA MEGANTARA M.kom</p>
-            </a>
+        <a>
+          Alamat Asal
+          <p>RAMA ARIA MEGANTARA M.kom</p>
+        </a>
 
-            <a>
-                Kode Pos Asal
-                <p>52254r</p>
-            </a>
+        <a>
+          Kode Pos Asal
+          <p>52254r</p>
+        </a>
 
-            <a>
-                Telpon Asal
-                <p>085801308928</p>
-            </a>
+        <a>
+          Telpon Asal
+          <p>085801308928</p>
+        </a>
 
-            <a>
-                Alamat Semarang
-                <p>Semarang Barat</p>
-            </a>
+        <a>
+          Alamat Semarang
+          <p>Semarang Barat</p>
+        </a>
 
-            <a>
-                Kode Pos Semarang
-                <p>50141</p>
-            </a>
+        <a>
+          Kode Pos Semarang
+          <p>50141</p>
+        </a>
 
-            <a>
-                Telpon Semarang
-                <p>-</p>
-            </a>
+        <a>
+          Telpon Semarang
+          <p>-</p>
+        </a>
 
-            <a>
-                No. HP Mahasiswa
-                <p>085801308928</p>
-            </a>
+        <a>
+          No. HP Mahasiswa
+          <p>085801308928</p>
+        </a>
 
-            <a>
-                Email Mahasiswa
-                <p>mahasiswa@unv.example.com</p>
-            </a>
+        <a>
+          Email Mahasiswa
+          <p>mahasiswa@unv.example.com</p>
+        </a>
 
-            <a>
-                Email Lain
-                <p>-</p>
-            </a>
-
-            
-        </div>
+        <a>
+          Email Lain
+          <p>-</p>
+        </a>
+      </div>
     </div>
-    
+
     <!-- data ortu -->
     <div class="data-ortu">
-        <p>Data Orang Tua</p>
-        <button class="toggle-btn-ortu" onclick="toggleOrtuInfo()"><i class="fas fa-chevron-down"></i></button>
-        <div class="additional-info-ortu" style="display: none;">
-            <a>
-                Nama Orang Tua
-                <p>-</p>
-            </a>
-    
-            <a>
-                Warga Negara Orang Tua
-                <p>WNI</p>
-            </a>
-    
-            <a>
-                Alamat Orang Tua
-                <p>Jalan Orang Tua No. 123</p>
-            </a>
-    
-            <a>
-                Kode Pos Orang Tua
-                <p>12345</p>
-            </a>
-    
-            <a>
-                Telpon Orang Tua
-                <p>081234567890</p>
-            </a>
-    
-            <a>
-                Email Orang Tua
-                <p>orangtua@unv.example.com</p>
-            </a>
-    
-        </div>
+      <p>Data Orang Tua</p>
+      <button class="toggle-btn-ortu" onclick="toggleOrtuInfo()">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="additional-info-ortu" style="display: none">
+        <a>
+          Nama Orang Tua
+          <p>-</p>
+        </a>
+
+        <a>
+          Warga Negara Orang Tua
+          <p>WNI</p>
+        </a>
+
+        <a>
+          Alamat Orang Tua
+          <p>Jalan Orang Tua No. 123</p>
+        </a>
+
+        <a>
+          Kode Pos Orang Tua
+          <p>12345</p>
+        </a>
+
+        <a>
+          Telpon Orang Tua
+          <p>081234567890</p>
+        </a>
+
+        <a>
+          Email Orang Tua
+          <p>orangtua@unv.example.com</p>
+        </a>
+      </div>
     </div>
 
     <div class="logOut">
-    <button id="logoutBtn" onclick="logout()">Log Out</button>
+      <button id="logoutBtn" onclick="logout()">Log Out</button>
     </div>
-    
 
     <!-- navigasi -->
     <div class="navigasi">
-        <div class="nav">
-            <div class="navbar">
-                <a href="dashboard.html">
-                    <img src="icon/home.png" alt="" />
-                </a>
-                <p>Beranda</p>
-            </div>
-
-            <div class="navbar">
-                <a href="jadwal.html">
-                    <img src="icon/date.png" alt="" />
-                </a>
-                <p>Jadwal</p>
-            </div>
-
-            <div class="navbar">
-                <a href="profill.html">
-                    <img src="icon/profile.png" alt="" />
-                </a>
-                <p>Profil</p>
-            </div>
+      <div class="nav">
+        <div class="navbar">
+          <a href="dashboard.html">
+            <img src="icon/home.png" alt="" />
+          </a>
+          <p>Beranda</p>
         </div>
+
+        <div class="navbar">
+          <a href="jadwal.html">
+            <img src="icon/date.png" alt="" />
+          </a>
+          <p>Jadwal</p>
+        </div>
+
+        <div class="navbar">
+          <a href="profill.html">
+            <img src="icon/profile.png" alt="" />
+          </a>
+          <p>Profil</p>
+        </div>
+      </div>
     </div>
 
     <script src="profile.js"></script>
-</body>
+  </body>
 </html>

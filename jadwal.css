@@ -16,11 +16,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+
   background-color: #eff6ff;
   color: #190069;
-
 }
 
 /* judul */
@@ -56,7 +55,6 @@ body {
 .senin {
   animation: blurIn 3s ease-in-out;
   padding: 20px;
-  
 }
 
 .senin .hari {
@@ -65,7 +63,6 @@ body {
   border-radius: 10px 10px 0 0;
   margin-bottom: 0; /* Menghilangkan ruang ke bawah */
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .senin .hari p {
@@ -86,7 +83,6 @@ body {
   padding-top: 0; /* Menghilangkan padding atas */
   border-radius: 0 10px 10px 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .senin .matkul h3 {
@@ -154,7 +150,6 @@ body {
   border-radius: 10px 10px 0 0;
   margin-bottom: 0; /* Menghilangkan ruang ke bawah */
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .senin .hari p {
@@ -243,7 +238,6 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
-
 }
 
 .nav {

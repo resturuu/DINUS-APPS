@@ -13,27 +13,22 @@
   }
 }
 
-
 /* Animasi slideRightText hanya untuk teks */
 @keyframes slideRightText {
   from {
-   transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
   }
   to {
-   transform: translateX(0); /* Menuju posisi normal */
+    transform: translateX(0); /* Menuju posisi normal */
   }
-  }
-  
-  
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #eff6ff;
   color: #190069;
-
 }
 
 .judul-menu h1 {
@@ -46,22 +41,21 @@ body {
 
 /* judul */
 .judul-halaman {
-background-color: white;
-margin: 0;
-padding: 0;
-height: 40px;
-display: flex;
-justify-content: flex-start; /* Posisikan konten ke kiri */
-align-items: center; /* Posisikan konten secara vertikal di tengah */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* Posisikan konten ke kiri */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
 }
 
 .judul-halaman h1 {
-color: #190069;
-padding: 20px;
-font-size: 20px;
-animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+  color: #190069;
+  padding: 20px;
+  font-size: 20px;
+  animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
-
 
 /* profile */
 .profile {
@@ -152,7 +146,6 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
   height: 40px;
   padding: 15px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-  
 }
 
 .icon-item p {

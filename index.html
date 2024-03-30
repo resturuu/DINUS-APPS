@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinus Verse Login Mahasiswa</title>
     <style>
-@keyframes blurIn {
-     0% {
-         opacity: 0;
-         filter: blur(10px);
-     }
-     50% {
-         opacity: 1;
-         filter: blur(0);
-     }
-     100% {
-         opacity: 1;
-         filter: blur(0);
-     }
- }
+      @keyframes blurIn {
+        0% {
+          opacity: 0;
+          filter: blur(10px);
+        }
+        50% {
+          opacity: 1;
+          filter: blur(0);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
       body {
         animation: fadeIn 5s ease; /* Menggunakan animasi fadeIn dengan durasi 2 detik dan ease timing function */
 
@@ -51,7 +51,6 @@
         margin-top: 20px;
       }
       .login-form input[type="text"] {
-        
         width: calc(100% - 40px); /* Lebar input dikurangi padding */
         margin-left: 20px;
         padding: 10px;
@@ -65,7 +64,6 @@
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
       }
-      
 
       .login-form input[type="password"] {
         width: calc(100% - 40px); /* Lebar input dikurangi padding */
@@ -87,7 +85,7 @@
         margin-left: 20px;
 
         background-color: #fccc1e;
-        
+
         color: #190069;
         border: none;
         cursor: pointer;
@@ -126,14 +124,13 @@
 
       /* Styling logo */
       .logo-container {
-     animation: blurIn 3s ease-in-out;
+        animation: blurIn 3s ease-in-out;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         color: white;
-
       }
 
       .logo {
@@ -163,9 +160,7 @@
     <div id="particles-js"></div>
 
     <!-- Tombol untuk menampilkan form -->
-    <button class="show-form-button" onclick="toggleLoginForm()">
-      Login
-    </button>
+    <button class="show-form-button" onclick="toggleLoginForm()">Login</button>
 
     <!-- Form login -->
     <div class="login-form" id="loginForm">

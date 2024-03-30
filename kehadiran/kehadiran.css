@@ -1,41 +1,36 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #eff6ff;
   color: #190069;
-
 }
-
 
 /* judul */
 /* judul */
 .judul-halaman {
-background-color: white;
-margin: 0;
-padding: 0;
-height: 40px;
-display: flex;
-justify-content: flex-start; /* Posisikan konten ke kiri */
-align-items: center; /* Posisikan konten secara vertikal di tengah */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* Posisikan konten ke kiri */
+  align-items: center; /* Posisikan konten secara vertikal di tengah */
 }
 
 .judul-halaman img {
-height: 20px;
-margin-left: 20px;
-margin-right: -10px;
-animation: slideRightText 0.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
-
+  height: 20px;
+  margin-left: 20px;
+  margin-right: -10px;
+  animation: slideRightText 0.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
 .judul-halaman h1 {
-color: #190069;
-padding: 20px;
-font-size: 20px;
-animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+  color: #190069;
+  padding: 20px;
+  font-size: 20px;
+  animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
-
 
 /* matriks */
 .content {
@@ -53,12 +48,12 @@ animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk 
   justify-content: space-between;
 }
 
-.matkul .matkul-jadwal h2{
+.matkul .matkul-jadwal h2 {
   font-size: 16px;
   margin: 0;
 }
 
-.matkul .matkul-jadwal p{
+.matkul .matkul-jadwal p {
   font-size: 13px;
   color: #94a3b8;
   margin: 0;
@@ -94,7 +89,6 @@ animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk 
 .hadir .persen {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .hadir .persen p {
@@ -102,7 +96,7 @@ animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk 
   margin-right: 10px;
 }
 /* presentase kehadiran */
-.presentase{
+.presentase {
   background-color: white;
   display: flex;
   border-radius: 10px;
@@ -122,7 +116,6 @@ animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk 
 .presentase .persen {
   background-color: rgba(114, 255, 152, 0.682);
   border-radius: 10px;
-
 }
 
 .presentase .persen p {
@@ -130,33 +123,15 @@ animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk 
   margin-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Animasi slideRightText hanya untuk teks */
 @keyframes slideRightText {
-from {
- transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
 }
-to {
- transform: translateX(0); /* Menuju posisi normal */
-}
-}
-
 
 /* blur content */
 @keyframes blurIn {
@@ -173,5 +148,3 @@ to {
     filter: blur(0);
   }
 }
-
-

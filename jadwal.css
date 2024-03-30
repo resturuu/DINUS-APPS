@@ -242,7 +242,8 @@ body {
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: center;
-  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2); /* Bayangan ke atas */
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
+
 }
 
 .nav {

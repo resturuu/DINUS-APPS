@@ -143,6 +143,8 @@ animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk 
 .icon-item {
   text-align: center;
   margin-left: 20px; /* Jarak antara setiap ikon */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .icon-item img {

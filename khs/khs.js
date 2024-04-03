@@ -50,7 +50,7 @@ function toggleDetailsSatu() {
     button.innerHTML = '<i class="fas fa-chevron-up"></i>'; // Mengubah teks dan ikon tombol
     
     // Animasi scroll smooth
-    details.scrollIntoView({ behavior: "smooth", block: "start" });
+    // details.scrollIntoView({ behavior: "smooth", block: "start" });
   } else {
     details.style.display = 'none';
     button.innerHTML =  '<i class="fas fa-chevron-down"></i>'; // Mengubah teks dan ikon tombol

@@ -117,10 +117,9 @@ html {
 .SMT1 {
   animation: blurIn 3s ease-in-out;
   margin: 15px;
-  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: rgba(172, 162, 216, 0.729);
   border-radius: 15px;
-  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
 }
 
 /* judul semester */
@@ -255,4 +254,238 @@ html {
   transition: transform 10s ease;
 }
 
-/* Daftar Nilai */
+/*|||||  DAFTAR NILAI  |||||*/
+.ipk-sks {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  animation: blurIn 3s ease-in-out;
+}
+
+.ipk {
+  height: max-content;
+  margin-right: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ipk p{
+  margin: 0;
+  font-size: 10px;
+}
+#ipk {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sks {
+  height: max-content;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sks p{
+  margin: 0;
+  font-size: 10px;
+}
+#sks {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* total nilai */
+.total-nilai {
+  height: max-content;
+  width: auto;
+  margin: 15px;
+  background-color: #e5e5e599;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
+}
+
+.left {
+  width: 100%;
+  height: max-content;
+  margin-right: 20px;
+}
+
+.right {
+  width: 100%;
+  height: max-content;
+}
+
+.a {
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-weight: 500;
+}
+
+.a-end {
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-weight: 500;
+}
+
+.jumlah-a {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #86efac;
+}
+
+.jumlah-b {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #86efac;
+}
+
+.jumlah-c {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #fde047;
+}
+
+.jumlah-d {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #fca5a5;
+}
+
+.jumlah-e {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #ef4444;
+}
+
+.jumlah-ab {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #86efac;
+}
+
+.jumlah-bc {
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #fde047;
+}
+
+/* daftar nilai mata kuliah */
+.daftar-nm {
+  margin: 15px;
+  animation: blurIn 3s ease-in-out;
+}
+
+.jd p{
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 0 20px 0 20px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#nama-matkul {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+#kode {
+  margin-top: 0;
+  font-size: 10px;
+}
+
+.list img {
+  height: 8px;
+  margin: 0 5px 0 5px;
+}
+
+/* keterangan nilai */
+
+/* KUNING (BC.C) */
+.ket-nilai-kuning {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fde047;
+}
+
+.ket-nilai-kuning p{
+  font-weight: 600;
+  margin: 0;
+  padding: 0 5px 0 5px;
+}
+
+/* HIJAU (A,AB)*/
+.ket-nilai-hijau {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #86efac;
+}
+
+.ket-nilai-hijau p{
+  margin: 0;
+  padding: 0 5px 0 5px;
+  font-weight: 600;
+}
+
+/* pink (D)*/
+.ket-nilai-pink {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fca5a5;
+}
+
+.ket-nilai-pink p{
+  margin: 0;
+  padding: 0 5px 0 5px;
+  font-weight: 600;
+}
+
+/* merah (E)*/
+.ket-nilai-merah {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ef4444;
+}
+
+.ket-nilai-merah p{
+  margin: 0;
+  padding: 0 5px 0 5px;
+  font-weight: 600;
+}

@@ -1,3 +1,29 @@
+/* animasi blur untuk content */
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,14 +58,201 @@ body {
   animation: slideRightText 1.2s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
-/* grafik */
+/* CONTENT */
 
-/* Animasi slideRightText hanya untuk teks */
-@keyframes slideRightText {
-  from {
-    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
-  }
-  to {
-    transform: translateX(0); /* Menuju posisi normal */
-  }
+/* nav */
+.nav {
+  height: max-content;
+  width: auto;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: blurIn 3s ease-in-out;
 }
+
+.nav a {
+  margin: 0;
+  padding: 10px 55px 10px 55px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: #bac3d0;
+}
+/* Warna tautan aktif */
+.nav-link.active {
+  color: #190069;
+}
+
+/* to top */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* |||||   KHS   ||||| */
+/* SMT1 */
+.SMT1 {
+  animation: blurIn 3s ease-in-out;
+  margin: 15px;
+  box-shadow: 0px 0.5px 0.1px 0px rgba(0, 0, 0, 0.141);
+  background-color: rgba(172, 162, 216, 0.729);
+  border-radius: 15px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Bayangan ke atas */
+}
+
+/* judul semester */
+.judul-smt-1 {
+  padding: 15px;
+}
+.judul-smt-1 p {
+  font-size: 13px;
+}
+
+/* background abu-abu di belakang matkul */
+.bg-matkul-1 {
+  animation: blurIn 2.5s ease-in-out;
+  background-color: #dbd9ea;
+  padding: 20px 0 1px 0;
+  border-radius: 0 0 15px 15px;
+}
+
+/* daftar matkul */
+.card {
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* nama matkul */
+#nm {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* kelompok */
+.kelompok {
+  padding: 5px;
+  background-color: #efc956;
+  width: max-content;
+  height: max-content;
+  border-radius: 7px;
+}
+
+.kelompok p {
+  font-size: 10px;
+  margin: 0;
+}
+
+.card img {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 10px;
+}
+
+/* dosen pengampu */
+#dp {
+  font-size: 10px;
+}
+
+/* nilai */
+.nilai {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tugas {
+  text-align: center;
+}
+.tugas p {
+  font-size: 10px;
+}
+#tugas {
+  margin: 0;
+  font-size: 20px;
+}
+
+.UTS {
+  text-align: center;
+}
+.UTS p {
+  font-size: 10px;
+}
+#UTS {
+  margin: 0;
+  font-size: 20px;
+}
+
+.UAS {
+  text-align: center;
+}
+.UAS p {
+  font-size: 10px;
+}
+#UAS {
+  margin: 0;
+  font-size: 20px;
+}
+
+.N-AKHIR {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #86efac;
+}
+.N-AKHIR p {
+  font-size: 10px;
+}
+#N-AKHIR {
+  margin: 0 0 5px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.toggle-button-krs-smt-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 25px;
+  margin-right: 20px;
+  background-color: transparent; /* sesuaikan dengan warna latar belakang */
+  border: 1px solid #ccc; /* sesuaikan dengan warna border yang diinginkan */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Ganti dengan ikon baca selengkapnya dan tutup */
+.toggle-button-krs-smt-1 I {
+  transition: transform 10s ease;
+}
+
+/* Daftar Nilai */

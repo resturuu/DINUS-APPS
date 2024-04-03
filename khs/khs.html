@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="khs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,17 +14,289 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="khs.css" />
+    <script src="khs.js"></script>
+    <title>KHS</title>
   </head>
   <body>
     <!-- judul -->
-    <div class="judul-halaman">
+    <div class="judul-halaman" id="home">
       <a href="../dashboard.html">
         <img src="icon-title/back.png" alt="" />
       </a>
-      <h1>Kartu Hasil Studi</h1>
+      <h1>KHS</h1>
     </div>
 
-    <!-- grafik -->
+    <!-- content -->
+    <div class="nav">
+      <a href="#reguler" class="nav-link" id="nav-reguler">KHS</a>
+      <a href="#non-reguler" class="nav-link" id="nav-non-reguler"
+        >Daftar Nilai</a
+      >
+    </div>
+
+    <!-- KHS -->
+    <div class="reguler" id="reguler">
+      <!-- krs smt 1 -->
+      <div class="SMT1" style="position: relative">
+        <div class="judul-smt-1">
+          <p>KRS 2023-2024 Ganjil</p>
+        </div>
+        <div id="bg-matkul-1" class="bg-matkul-1" style="display: none">
+          <!-- matkul -->
+          <!-- kalkulus -->
+          <div class="card">
+            <p id="nm">KALKULUS</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>A11.64101 <img src="icon-title/dot.png" alt="DOT" /> 3 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: ROBERTUS HERI SU S.Si,m.Si</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">80</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">60</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">55</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">63 | C</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- fisika -->
+          <div class="card">
+            <p id="nm">FISIKA</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>A11.64102 <img src="icon-title/dot.png" alt="DOT" /> 4 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: MUHAMAD ARKOM M.Si</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">75</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">60</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">78</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">71.4 | B</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DASPRO -->
+          <div class="card">
+            <p id="nm">DASAR PEMROGRAMAN</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>A11.64103 <img src="icon-title/dot.png" alt="DOT" /> 4 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: IFAN RIZQA M.Kom</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">75</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">55.55</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">61.7</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">65.79 | BC</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- keterampilan interpersonal -->
+          <div class="card">
+            <p id="nm">KETERAMPILAN INTERPERSONAL</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>A11.64104 <img src="icon-title/dot.png" alt="DOT" /> 2 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: ARDYTHA LUTHFIARTA M.Kom</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">85</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">80</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">85</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">84 | AB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DASKOM -->
+          <div class="card">
+            <p id="nm">DASAR DASAR KOMPUTASI</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>AF201704 <img src="icon-title/dot.png" alt="DOT" /> 2 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: DANNY OKA RATMANA M.Kom</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">90</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">82</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">83</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">84.75 | AB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- B INDO -->
+          <div class="card">
+            <p id="nm">BAHASA INDONESIA</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>N201701 <img src="icon-title/dot.png" alt="DOT" /> 2 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: BAYU AJI PRIANDANU S.S., M.S.</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">93</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">90</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">92</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">92 | A</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAI -->
+          <div class="card">
+            <p id="nm">PENDIDIKAN AGAMA ISLAM</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>N2017051 <img src="icon-title/dot.png" alt="DOT" /> 2 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: ANIS NI'AM IMANA S.H.I, M.E</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">87</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">77</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">85</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">83.2 | AB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PENGANTAR TEKNOLOGI INFORMASI -->
+          <div class="card">
+            <p id="nm">PENGANTAR TEKNOLOGI INFORMASI</p>
+            <!-- kelompok -->
+            <div class="kelompok">
+              <p>U201704 <img src="icon-title/dot.png" alt="DOT" /> 2 SKS</p>
+            </div>
+            <!-- dosan pengampu -->
+            <p id="dp">Dosen Pengampu: ANIS NI'AM IMANA S.H.I, M.E</p>
+            <!-- nilai -->
+            <div class="nilai">
+              <div class="tugas">
+                <p>Tugas</p>
+                <p id="tugas">100</p>
+              </div>
+              <div class="UTS">
+                <p>UTS</p>
+                <p id="UTS">70</p>
+              </div>
+              <div class="UAS">
+                <p>UAS</p>
+                <p id="UAS">75</p>
+              </div>
+              <div class="N-AKHIR">
+                <p>N.AKHIR</p>
+                <p id="N-AKHIR">81 | AB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tombol baca slengkapnya -->
+        <button class="toggle-button-krs-smt-1" onclick="toggleDetailsSatu()">
+          <i class="fas fa-chevron-down"></i>
+          <!-- Icon untuk tombol -->
+        </button>
+      </div>
+
+      <!-- to top -->
+      <a href="#home" id="scrollToTop" class="scroll-to-top">&uarr;</a>
+    </div>
+
+    <!-- non reguler -->
+    <div class="reguler" id="non-reguler" style="display: none"></div>
   </body>
 </html>

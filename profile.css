@@ -13,9 +13,19 @@
   }
 }
 
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-400%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 20%;
   font-family: "Poppins", sans-serif;
   background-color: #eff6ff;
   color: #190069;
@@ -38,16 +48,6 @@ body {
   padding: 20px;
   font-size: 20px;
   animation: slideRightText 1.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
-}
-
-/* Animasi slideRightText hanya untuk teks */
-@keyframes slideRightText {
-  from {
-    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
-  }
-  to {
-    transform: translateX(0); /* Menuju posisi normal */
-  }
 }
 
 /* users */
@@ -236,7 +236,7 @@ body {
   position: fixed;
   bottom: 0;
   height: 6.5%;
-  width: 100%;
+  width: calc(60%); /* Lebar maksimum dikurangi margin body */
   background-color: white;
   border-radius: 25px 25px 0 0;
   display: flex;
@@ -252,8 +252,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 55px;
 }
+
 
 .navigasi .nav .navbar p {
   margin: 0;
@@ -262,6 +262,7 @@ body {
 }
 
 .navbar img {
+  margin: 0px 55px;
   margin-top: 10px;
   max-width: 25px;
   transition: transform 0.3s ease; /* Menambahkan transisi untuk efek yang lebih halus */
@@ -271,4 +272,17 @@ body {
 .navbar img:active {
   max-width: 27px;
   transform: rotate(10deg); /* Rotasi 10 derajat saat dihover atau diklik */
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Stil CSS untuk layar berukuran 768px atau lebih kecil (mobile) */
+  body {
+    padding: 0;
+  }
+
+  .navigasi {
+    max-width: calc(100%);
+    width: 100%;
+  }
 }

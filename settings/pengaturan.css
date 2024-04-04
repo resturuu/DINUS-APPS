@@ -1,6 +1,32 @@
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Animasi slideRightText hanya untuk teks */
+@keyframes slideRightText {
+  from {
+    transform: translateX(-300%); /* Mulai dari luar layar sebelah kiri */
+  }
+  to {
+    transform: translateX(0); /* Menuju posisi normal */
+  }
+}
+
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 20%;
   font-family: "Poppins", sans-serif;
   background-color: #eff6ff;
   color: #190069;
@@ -22,7 +48,7 @@ body {
   height: 20px;
   margin-left: 20px;
   margin-right: -10px;
-  animation: slideRightText 0.5s ease-in-out; /* Gunakan animasi slideRight untuk teks */
+  animation: slideRightText 1s ease-in-out; /* Gunakan animasi slideRight untuk teks */
 }
 
 .judul-halaman h1 {
@@ -34,45 +60,69 @@ body {
 
 /* resset pw */
 .reset {
+  animation: blurIn 3s ease-in-out;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
   margin: 20px;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
+  transition: background-color 1s, color 1s;
 }
 
+.reset:active, 
+.reset:hover {
+  background-color: #190069;
+}
+
+.reset:hover a {
+  color: #f4f4f4;
+}
+
+
 .reset a {
-  font-weight: bold;
+  color: #190069;
+  font-weight: 600;
   font-size: 14px;
   text-decoration: none;
 }
 
 .help {
+  animation: blurIn 3s ease-in-out;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
   display: grid;
   margin: 20px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  transition: background-color 1s, color 1s;
+}
+
+.help:active, 
+.help:hover {
+  background-color: #190069;
+}
+
+.help:hover a {
+  color: #f4f4f4;
 }
 
 .help a {
   margin-bottom: 10px;
   font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  color: #190069;
 }
 
-a:hover {
-  color: #ffbf00;
-}
-
-/* Animasi slideRightText hanya untuk teks */
-@keyframes slideRightText {
-  from {
-    transform: translateX(-200%); /* Mulai dari luar layar sebelah kiri */
+/* responsivbe */
+@media screen and (max-width: 768px) {
+  /* Stil CSS untuk layar berukuran 768px atau lebih kecil (mobile) */
+  body {
+    padding: 0;
   }
-  to {
-    transform: translateX(0); /* Menuju posisi normal */
+
+  .navigasi {
+    max-width: calc(100%);
+    width: 100%;
   }
 }

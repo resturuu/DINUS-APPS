@@ -23,16 +23,6 @@
   }
 }
 
-@keyframes resetAnimation {
-  100% { background-color: white; }
-  100% { background-color: #190069; }
-  100% { background-color: white; }
-}
-
-.reset:active {
-  animation-name: resetAnimation;
-  animation-duration: 1s; /* Durasi total animasi */
-}
 
 body {
   margin: 0;
@@ -70,6 +60,7 @@ body {
 
 /* resset pw */
 .reset {
+  animation: blurIn 3s ease-in-out;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang jatuh ke bawah */
   margin: 20px;
   background-color: white;
@@ -135,3 +126,4 @@ body {
     width: 100%;
   }
 }
+
